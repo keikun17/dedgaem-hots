@@ -3,6 +3,7 @@
   "dependencies": {
     "backbone": "latest",
     "moment": "latest",
-    "bootstrap": "latest"
+    "bootstrap": "latest",
+    "holderjs": "latest"
   }
 }

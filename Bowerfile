@@ -2,3 +2,4 @@ asset "backbone"
 asset "moment"
 
 asset "bootstrap"
+asset "holderjs"
