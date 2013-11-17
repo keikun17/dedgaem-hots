@@ -1,0 +1,8 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "backbone": "latest",
+    "moment": "latest",
+    "bootstrap": "latest"
+  }
+}
