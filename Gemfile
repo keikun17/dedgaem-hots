@@ -56,6 +56,8 @@ group :development do
   # gem 'quiet_assets'
 end
 
+gem "bower-rails", "~> 0.5.0"
+
 group :test do
   gem 'rspec-rails'
 end
