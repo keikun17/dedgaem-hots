@@ -10,5 +10,9 @@ end
 #  universe   :string(255)
 #  created_at :datetime
 #  updated_at :datetime
+#  base_life  :float
+#  attack     :float
+#  abilities  :float
+#  speed      :float
 #
 
