@@ -1,4 +1,6 @@
 class Hero < ActiveRecord::Base
+
+  validates :universe, inclusion: { in: Universe.all }, presence: true
 end
 
 # == Schema Information
