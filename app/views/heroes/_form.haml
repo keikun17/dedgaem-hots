@@ -1,4 +1,30 @@
-= fields_for hero do
-  = f.text_field
+=  form_for hero do |f|
 
+  %p
+    Name
+    = f.text_field :name
+
+  %p
+    Universe
+    = f.text_field :universe
+
+  %p
+    Base Life
+    = f.text_field :base_life
+
+  %p
+    Attack
+    = f.text_field :attack
+
+  %p
+    Abilities
+    = f.text_field :abilities
+
+  %p
+    Speed
+    = f.text_field :speed
+
+
+  %p 
+    = f.submit 
 
