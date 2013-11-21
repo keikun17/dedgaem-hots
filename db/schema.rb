@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131118155906) do
+ActiveRecord::Schema.define(version: 20131121082001) do
 
   create_table "heroes", force: true do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20131118155906) do
     t.float    "attack"
     t.float    "abilities"
     t.float    "speed"
+    t.string   "specialization"
   end
 
 end
