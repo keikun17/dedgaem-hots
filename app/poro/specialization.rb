@@ -1,6 +1,6 @@
 class Specialization
 
   def self.all
-    ['warrior', 'assassin', 'support']
+    ['warrior', 'assassin', 'support', 'specialist']
   end
 end
