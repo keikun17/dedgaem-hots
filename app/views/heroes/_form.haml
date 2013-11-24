@@ -6,7 +6,7 @@
 
   %p
     Universe
-    = f.text_field :universe
+    = f.select :universe, Universe.all
 
   %p
     Base Life
