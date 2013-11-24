@@ -42,6 +42,7 @@ class HeroesController < ApplicationController
                                  :base_life,
                                  :attack,
                                  :abilities,
+                                 :specialization
                                  :speed)
   end
 end
