@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131121082001) do
+ActiveRecord::Schema.define(version: 20131124150741) do
 
   create_table "heroes", force: true do |t|
     t.string   "name"
@@ -24,5 +24,12 @@ ActiveRecord::Schema.define(version: 20131121082001) do
     t.float    "speed"
     t.string   "specialization"
   end
+
+  create_table "talents", force: true do |t|
+    t.integer "hero_id"
+    t.string  "name"
+  end
+
+  add_index "talents", ["hero_id"], name: "index_talents_on_hero_id", using: :btree
 
 end
