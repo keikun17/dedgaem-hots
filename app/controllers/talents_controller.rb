@@ -17,6 +17,10 @@ class TalentsController < ApplicationController
     end
   end
 
+  def index
+    @talents = Talent.all
+  end
+
   private
 
   def set_talent

@@ -1,0 +1,14 @@
+
+%table.table
+  %thead
+    %tr
+      %th id
+      %th name
+      %th hero
+
+  %tbody
+    - @talents.each do |talent|
+      %tr
+        %td= talent.id
+        %td= talent.name
+        %td= talent.hero.name
