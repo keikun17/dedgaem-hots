@@ -1,5 +1,6 @@
 class Hero < ActiveRecord::Base
 
+  validates :name, presence: true
   validates :universe, inclusion: { in: Universe.all }, presence: true
 end
 

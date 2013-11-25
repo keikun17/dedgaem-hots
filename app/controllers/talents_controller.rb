@@ -24,7 +24,7 @@ class TalentsController < ApplicationController
   end
 
   def talent_params
-    params.require(:talent).permit(:name)
+    params.require(:talent).permit(:name, :hero_id)
   end
 
 end
