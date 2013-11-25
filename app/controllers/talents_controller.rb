@@ -8,6 +8,15 @@ class TalentsController < ApplicationController
     @talent = Talent.new
   end
 
+  def create
+    @talent = Talent.new(talent_params)
+    if @talent.save
+      redirect_to @talent, success: 'talent created'
+    else
+      render action: 'new'
+    end
+  end
+
   private
 
   def set_talent
