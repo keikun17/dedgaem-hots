@@ -1,0 +1,15 @@
+%table.table
+  %thead
+    %tr
+      %th id
+      %th title
+      %th summary
+      %th body
+
+  %tbody
+    - @builds.each do |build|
+      %tr
+        %td= build.id
+        %td= build.title
+        %td= build.summary
+        %td= build.body

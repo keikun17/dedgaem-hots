@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131124150741) do
+ActiveRecord::Schema.define(version: 20131125235021) do
+
+  create_table "builds", force: true do |t|
+    t.string   "title"
+    t.text     "summary"
+    t.text     "body"
+    t.integer  "hero_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "builds", ["hero_id"], name: "index_builds_on_hero_id", using: :btree
 
   create_table "heroes", force: true do |t|
     t.string   "name"
