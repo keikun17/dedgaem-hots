@@ -6,6 +6,7 @@ Hots::Application.routes.draw do
 
   resources 'heroes'
   resources 'talents'
+  resources 'builds'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
