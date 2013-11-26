@@ -1,5 +1,5 @@
 class BuildsController < ApplicationController
-  before_action :set_hero, only: [:show, :edit, :update, :destroy]
+  before_action :set_build, only: [:show, :edit, :update, :destroy]
 
   def new
     @build = Build.new
@@ -23,7 +23,7 @@ class BuildsController < ApplicationController
 
   private
 
-  def set_builds
+  def set_build
     @build = Build.find(params[:id])
   end
 

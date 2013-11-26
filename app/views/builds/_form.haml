@@ -1,0 +1,21 @@
+=  form_for build do |f|
+
+  %p
+    Hero
+    = f.select :hero_id, options_for_select(Hero.all.collect{|h| [h.name, h.id]})
+
+  %p
+    Title
+    = f.text_field :title
+
+  %p
+    Summary
+    = f.text_area :summary
+
+  %p
+    Body
+    = f.text_area :body
+
+  %p
+    = f.submit
+
