@@ -2,6 +2,9 @@ class Hero < ActiveRecord::Base
 
   validates :name, presence: true
   validates :universe, inclusion: { in: Universe.all }, presence: true
+
+  has_many :talents
+  has_many :builds
 end
 
 # == Schema Information
