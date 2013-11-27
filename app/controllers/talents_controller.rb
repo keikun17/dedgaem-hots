@@ -13,12 +13,17 @@ class TalentsController < ApplicationController
     if @talent.save
       redirect_to @talent, success: 'talent created'
     else
-      render action: 'new'
+      render talents_path
     end
   end
 
   def index
     @talents = Talent.all
+  end
+
+  def destroy
+    @talent.destroy
+    redirect_to 'index'
   end
 
   private

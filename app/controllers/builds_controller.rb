@@ -10,7 +10,7 @@ class BuildsController < ApplicationController
 
   def destroy
     @build.destroy
-    redirect_to 'index'
+    redirect_to builds_path
   end
 
   def create
