@@ -3,8 +3,8 @@ class Hero < ActiveRecord::Base
   validates :name, presence: true
   validates :universe, inclusion: { in: Universe.all }, presence: true
 
-  has_many :talents
-  has_many :builds
+  has_many :talents, dependent: :destroy
+  has_many :builds, dependent: :destroy
 end
 
 # == Schema Information
