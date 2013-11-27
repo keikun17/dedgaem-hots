@@ -8,6 +8,11 @@ class BuildsController < ApplicationController
   def show
   end
 
+  def destroy
+    @build.destroy
+    redirect_to 'index'
+  end
+
   def create
     @build = Build.new(build_params)
     if @build.save
