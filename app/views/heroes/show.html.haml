@@ -3,12 +3,22 @@
   = @hero.universe
 
 %h3 Talents
-%table.table
+%ul
+  - @hero.talents.each do |talent|
+    %li= talent.name
+
+%h3 Builds
+%table
   %thead
     %tr
-      %th Name
+      %th Title
+      %th Summary
+      %th Body
   %tbody
-    - @hero.talents.each do |talent|
+    - @hero.builds.each do |build|
       %tr
-        %td= talent.name
+        %td= build.title
+        %td= build.summary
+        %td= build.body
+
 
