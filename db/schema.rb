@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131125235021) do
+ActiveRecord::Schema.define(version: 20131130062849) do
 
   create_table "builds", force: true do |t|
     t.string   "title"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20131125235021) do
     t.float    "abilities"
     t.float    "speed"
     t.string   "specialization"
+    t.string   "mastery"
   end
 
   create_table "talents", force: true do |t|
