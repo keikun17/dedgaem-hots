@@ -21,5 +21,6 @@ end
 #  abilities      :float
 #  speed          :float
 #  specialization :string(255)
+#  mastery        :string(255)
 #
 
