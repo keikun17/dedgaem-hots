@@ -16,7 +16,7 @@ class BuildsController < ApplicationController
   def create
     @build = Build.new(build_params)
     if @build.save
-      redirect_to @build, success: 'Build created'
+      redirect_to @build.hero, success: 'Build created'
     else
       render action: 'new'
     end
