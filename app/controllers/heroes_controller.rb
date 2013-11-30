@@ -43,6 +43,7 @@ class HeroesController < ApplicationController
                                  :attack,
                                  :abilities,
                                  :specialization,
+                                 :mastery,
                                  :speed)
   end
 end
