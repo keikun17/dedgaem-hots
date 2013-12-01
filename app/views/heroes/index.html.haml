@@ -7,16 +7,16 @@
 .col-lg-3
   %img{data: {src: 'holder.js/95%x64'}}
   %h2 Assassins
-  = render 'list', heroes: ['Kerrigan', 'Nova', 'Zeratul']
+  = render 'list', heroes: @heroes.where(specialization: 'assassin')
 .col-lg-3
   %img{data: {src: 'holder.js/95%x64'}}
   %h2 Warriors
-  = render 'list', heroes: ['Arthas', 'Muradin', 'Stitches']
+  = render 'list', heroes: @heroes.where(specialization: 'warrior')
 .col-lg-3
   %img{data: {src: 'holder.js/95%x64'}}
   %h2 Supports
-  = render 'list', heroes: ['Tassadar', 'Thrall', 'Uther']
+  = render 'list', heroes: @heroes.where(specialization: 'support')
 .col-lg-3
   %img{data: {src: 'holder.js/95%x64'}}
   %h2 Specialists
-  = render 'list', heroes: ['Vaevictis', 'Warfield', 'Witch Doctor', 'Zagara']
+  = render 'list', heroes: @heroes.where(specialization: 'specialist')
